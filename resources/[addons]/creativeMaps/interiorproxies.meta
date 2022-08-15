@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+	<startFrom value="4001" />
+	<filePathHash value="0" />
+	<proxies>
+		<Item>breze_church_milo_</Item>
+		<Item>int_genstore_milo_</Item>
+		<Item>v_clinick</Item>
+		<Item>brown_gunshop_milo_</Item>
+		<Item>sanhje_Prison_cafeteria_placement</Item>
+		<Item>sanhje_Prison_placement</Item>
+		<Item>sanhje_Prison_infirmary_placement</Item>
+		<Item>sanhje_prison_reception_placement</Item>
+		<Item>smokey_irishpubap_milo</Item>
+		<Item>smokey_irishpub_milo</Item>
+		<Item>brofx_mafia_mlo</Item>
+		<Item>int_shosp_milo_</Item>
+		<Item>np_town_hall_milo_</Item>
+		<Item>weazel_milo</Item>
+		<Item>zn_army02_01_mlo</Item>
+		<Item>zn_army02_03_mlo</Item>
+		<Item>container</Item>
+		<Item>zn_army02_02_mlo</Item>
+		<Item>zn_army_03_mlo</Item>
+		<Item>zn_army_04_mlo</Item>
+		<Item>zn_army_05_mlo</Item>
+		<Item>zn_army_01_mlo</Item>
+		<Item>zn_army_06_mlo</Item>
+		<Item>zn_army_02_mlo</Item>
+		<Item>zn_conce_mlo</Item>
+		<Item>zn_mecan</Item>
+		<Item>zn_cativeiro_mlo</Item>
+		<Item>zn_fishing_mlo</Item>
+		<Item>hp_bahamas</Item>
+		<Item>base_ilha_mlo</Item>
+		<Item>zn_letreiro</Item>
+		<Item>mansion_zn_02_mlo</Item>
+		<Item>mansion_zn_mlo</Item>
+		<Item>mecanica_zn_mlo</Item>
+		<Item>zn_money</Item>
+		<Item>zn_dib_mlo</Item>
+		<Item>zn_train_mlo</Item>
+		<Item>dolu_lasttrain_milo_</Item>
+		<Item>zn_training_mlo</Item>
+		<Item>lr_cs4_14_interior_v_hicksbar_milo_</Item>
+		<Item>int_hickbartop_milo_</Item>
+		<Item>zn_bb</Item>
+	</proxies>
+</SInteriorOrderData>
