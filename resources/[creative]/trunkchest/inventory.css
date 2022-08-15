@@ -1,0 +1,351 @@
+@import url("http://fonts.cdnfonts.com/css/akrobat");
+body {
+  overflow: hidden;
+}
+
+*,
+body {
+  margin: 0;
+  font-family: "Akrobat", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:focus,
+body:focus {
+  outline: 0;
+}
+
+* {
+  overflow: hidden;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.15625vw;
+  border-radius: 0.1041666667vw;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(34, 34, 34, 0.5);
+  border-radius: 0.1041666667vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F50A46;
+  border-radius: 0.1041666667vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F50A46;
+  border-radius: 0.1041666667vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#openInventory {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.078125vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+#openInventory .inventoryContainer {
+  background: rgba(33, 33, 33, 0.5);
+  padding: 1.0416666667vw;
+  border-radius: 0.4166666667vw;
+}
+#openInventory .inventoryTopInformation {
+  margin-bottom: 0vw;
+  display: flex;
+}
+#openInventory .inventoryTopInformation .leftTopData,
+#openInventory .inventoryTopInformation .rightTopData {
+  width: 26.6666666667vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#openInventory .inventoryTopInformation .middleTopData {
+  width: 7.0833333333vw;
+  margin: 0.2604166667vw;
+}
+#openInventory .inventoryTopInformation #weightTextLeft,
+#openInventory .inventoryTopInformation #weightTextRight {
+  float: right;
+  color: #dbdbdb;
+  font-size: 0.625vw;
+  text-align: right;
+  margin-right: 0.2604166667vw;
+  margin-bottom: 0.2604166667vw;
+  letter-spacing: 0.1041666667vw;
+}
+#openInventory .inventoryTopInformation #weightTextRight {
+  float: left;
+  margin-right: 0vw !important;
+  margin-left: 0.2604166667vw;
+}
+#openInventory .inventoryTopInformation #weightBarLeft,
+#openInventory .inventoryTopInformation #weightBarRight {
+  float: left;
+  height: 0.4166666667vw;
+  width: 100%;
+  margin-bottom: 0.15625vw;
+  border-radius: 0.0520833333vw;
+  background: rgba(34, 34, 34, 0.5);
+}
+#openInventory .inventoryTopInformation #weightContent {
+  float: left;
+  height: 0.4166666667vw;
+  max-width: 100%;
+  border-radius: 0.0520833333vw;
+  background: #F50A46;
+  transition: all 0.9s;
+}
+#openInventory .inventoryArea {
+  height: 27.5520833333vw;
+  display: flex;
+}
+#openInventory .inventoryArea .invMiddle {
+  width: 6.25vw;
+  margin: 0.2604166667vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#openInventory .inventoryArea .invMiddle div, #openInventory .inventoryArea .invMiddle input {
+  border: 0;
+  width: 70%;
+  outline: none;
+  color: #FFFFFF;
+  padding: 0.78125vw 0;
+  font-size: 0.5729166667vw;
+  text-align: center;
+  border-radius: 0.1041666667vw;
+  margin-bottom: 0.625vw;
+  letter-spacing: 0.1041666667vw;
+  background: rgba(245, 10, 69, 0.5);
+  transition: background 0.3s;
+}
+#openInventory .inventoryArea .invMiddle div::placeholder, #openInventory .inventoryArea .invMiddle input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#openInventory .inventoryArea .invMiddle div:hover, #openInventory .inventoryArea .invMiddle input:hover {
+  background: rgba(245, 10, 69, 0.8);
+}
+#openInventory .inventoryArea .invRight {
+  padding-right: 0vw !important;
+  padding-left: 0.15625vw;
+}
+#openInventory .inventoryArea .invLeft,
+#openInventory .inventoryArea .invRight {
+  width: 27.0833333333vw;
+  row-gap: 0.15625vw;
+  display: grid;
+  column-gap: 0.15625vw;
+  overflow-y: scroll;
+  padding-right: 0.15625vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#openInventory .inventoryArea .invLeft .item,
+#openInventory .inventoryArea .invRight .item {
+  width: 5.2083333333vw;
+  height: 6.7708333333vw;
+  display: flex;
+  border-radius: 0.1041666667vw;
+  flex-direction: column;
+  text-shadow: 0.0520833333vw 0.0520833333vw #000;
+  background: rgba(0, 0, 0, 0.45);
+}
+#openInventory .inventoryArea .invLeft .populated,
+#openInventory .inventoryArea .invRight .populated {
+  background: rgba(0, 0, 0, 0.5);
+  background-size: 86% !important;
+  transition: background 0.3s;
+}
+#openInventory .inventoryArea .invLeft .populated:hover,
+#openInventory .inventoryArea .invLeft .hoverControl,
+#openInventory .inventoryArea .invRight .populated:hover,
+#openInventory .inventoryArea .invRight .hoverControl {
+  background: rgba(0, 0, 0, 0.7);
+}
+#openInventory .inventoryArea .invLeft .item .top,
+#openInventory .inventoryArea .invRight .item .top {
+  display: flex;
+  color: #8c8c8c;
+  font-size: 0.5729166667vw;
+  justify-content: space-between;
+}
+#openInventory .inventoryArea .invLeft .itemAmount,
+#openInventory .inventoryArea .invRight .itemAmount {
+  margin: 0.625vw 0.625vw 0 0;
+}
+#openInventory .inventoryArea .invLeft .itemWeight,
+#openInventory .inventoryArea .invRight .itemWeight {
+  margin: 0.625vw 0 0 0.625vw;
+}
+#openInventory .inventoryArea .invLeft .item .nameItem,
+#openInventory .inventoryArea .invRight .item .nameItem {
+  align-self: center;
+  width: 100%;
+  color: #d0d0d0;
+  padding: 0.3645833333vw 0.5208333333vw;
+  font-size: 0.5729166667vw;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  background: rgba(245, 10, 69, 0.5);
+}
+#openInventory .inventoryArea .invLeft .item .durability,
+#openInventory .inventoryArea .invRight .item .durability {
+  width: 0;
+  height: 0.15625vw;
+  margin-top: auto;
+  background: #2e6e4c;
+}
+#openInventory .inventoryArea .invRight .item .top {
+  display: flex;
+  flex-direction: row;
+  color: #8c8c8c;
+  font-size: 0.5729166667vw;
+  justify-content: space-between;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+.ui-tooltip {
+  z-index: 9999;
+  color: #FFF;
+  font-size: 0.5729166667vw;
+  border-radius: 0.1041666667vw;
+  position: absolute;
+  background: #141414;
+  border-bottom: 0.15625vw solid #F50A46;
+  letter-spacing: 0.1041666667vw;
+  padding: 1.0416666667vw 1.0416666667vw 0.78125vw;
+}
+
+.ui-tooltip:hover {
+  display: none;
+}
+
+.ui-tooltip item {
+  float: left;
+  font-size: 0.7291666667vw;
+  min-width: 9.375vw;
+  letter-spacing: 0.1041666667vw;
+}
+
+.ui-tooltip legenda {
+  float: left;
+  min-width: 9.375vw;
+  margin-top: 0.5208333333vw;
+  padding-top: 0.3125vw;
+  line-height: 1.0416666667vw;
+  letter-spacing: 0.1041666667vw;
+}
+
+.ui-tooltip description {
+  float: left;
+  color: #b6b8bd;
+  font-size: 0.5729166667vw;
+  max-width: 9.375vw;
+  margin-top: 0.5208333333vw;
+}
+
+.ui-tooltip s {
+  color: #b6b8bd;
+  padding: 0 0.2604166667vw;
+  text-decoration: none;
+}
+
+.ui-tooltip r {
+  color: #b6b8bd;
+}
+
+.game-user-info {
+  display: flex;
+  margin-bottom: 1.0416666667vw;
+}
+
+.user-info-group {
+  display: flex;
+}
+
+.stress {
+  display: none;
+}
+
+.user-info-group > .data-bar {
+  width: 3.6458333333vw;
+  height: 1.3020833333vw;
+  border-radius: 0.2083333333vw;
+  margin: 0 0.2604166667vw 0 0.1302083333vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info-group > .data-bar > .bar {
+  height: 1.3020833333vw;
+  width: 50%;
+  max-width: 100%;
+}
+
+.user-info-group:last-child > .data-bar {
+  width: 3.6458333333vw;
+  height: 1.3020833333vw;
+  border-radius: 0.2083333333vw;
+  margin: 0 0 0 0.1302083333vw;
+}
+
+.user-info-group > .data-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2083333333vw;
+  width: 1.3020833333vw;
+  height: 1.3020833333vw;
+  margin: 0 0.1302083333vw;
+}
+
+.user-info-group > .data-icon > img {
+  height: 0.78125vw;
+}
+
+.hunger > .data-bar > .bar {
+  background-color: #e29836;
+}
+
+.thirst > .data-bar > .bar {
+  background-color: #0f72b5;
+}
+
+.stress > .data-bar > .bar {
+  background-color: #e23636;
+}
+
+.hunger > .data-icon {
+  background-color: #e29836;
+}
+
+.thirst > .data-icon {
+  background-color: #0f72b5;
+}
+
+.stress > .data-icon {
+  background-color: #e23636;
+}

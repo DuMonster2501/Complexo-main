@@ -1,0 +1,39 @@
+.mainmenu{
+	width: 100%;
+	display: none;
+	bottom: 100px;
+	position: fixed;
+    font-family: "Jura",sans-serif;
+    text-transform: uppercase;
+    transition: width 2s;
+}
+
+.mainmenu h1{
+	width: 800px;
+	margin: 0 auto;
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	color: rgba(255,255,255,0.9);
+	font-family: "Jura",sans-serif;
+}
+
+.mainmenu dd{
+	width: 800px;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	color: rgba(255,255,255,0.9);
+	font-family: "Jura",sans-serif;
+}
+
+.mainmenu b{
+	color: #92ac29;
+    font-family: "Jura",sans-serif;
+}
+
+#deadmenu b{
+	color: #bd962e;
+    font-family: "Jura",sans-serif;
+}

@@ -1,0 +1,485 @@
+@import url("http://fonts.cdnfonts.com/css/akrobat");
+body {
+  overflow: hidden;
+}
+
+*,
+body {
+  margin: 0;
+  font-family: "Akrobat", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:focus,
+body:focus {
+  outline: 0;
+}
+
+#cursorPointer {
+  position: absolute;
+  z-index: 999999;
+  display: none;
+}
+
+.openBarbershop {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.55) 90%);
+}
+.openBarbershop .barbershopBox {
+  width: 100vw;
+  height: 65vh;
+  margin: 0 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.openBarbershop .barbershopBox .left-person-input {
+  display: flex;
+  flex-direction: column;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-title {
+  display: flex;
+  width: 20.8333333333vw;
+  justify-content: space-between;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-title .person-title-icon {
+  width: 4.6875vw;
+  height: 5.2083333333vw;
+  background: #F50A46;
+  border-radius: 0.2083333333vw;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-title .person-title-text {
+  width: 15.1041666667vw;
+  height: 4.4270833333vw;
+  border-radius: 0.2083333333vw;
+  background: #5F00E6;
+  box-shadow: 0vw 0vw 2.031vw rgba(95, 0, 230, 0.5);
+  margin-top: -0.7291666667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: skew(354deg) rotate(-5deg);
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-title .person-title-text p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3020833333vw;
+  line-height: 1.4583333333vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-title .person-title-text p:last-child {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5625vw;
+  line-height: 1.5104166667vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content {
+  display: flex;
+  width: 21.3541666667vw;
+  justify-content: space-between;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item {
+  width: 5.2083333333vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  transform: rotate(-87deg);
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item:hover p {
+  transition: color 1s;
+  text-shadow: 0 0 5px dimgray;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item.active .category-icon, .openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item:hover .category-icon {
+  background: #F50A46;
+  box-shadow: 0vw 0vw 2.031vw #f50a46;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item.active p, .openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item:hover p {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px dimgray;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item p {
+  width: 0.2604166667vw;
+  height: 0.78125vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.7291666667vw;
+  line-height: 0.78125vw;
+  margin-bottom: 0.2604166667vw;
+  color: transparent;
+  transform: rotate(-2deg);
+  z-index: 9999;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item .category-icon {
+  width: 3.90625vw;
+  height: 3.6458333333vw;
+  background: #332E42;
+  border-radius: 0.2083333333vw;
+  transform: skew(-354deg);
+  transition: 0.4s;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-menu .category-list .category-item .category-icon img {
+  width: 3.90625vw;
+  height: 3.6458333333vw;
+  transform: rotate(90deg);
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content {
+  display: none;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content.active {
+  display: initial;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group {
+  margin-bottom: 1.0416666667vw;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group:last-child {
+  margin-bottom: 0;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group .input-group-text {
+  display: flex;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px dimgray;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group .input-group-text p {
+  margin-left: 0.2604166667vw;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group .input-group-item {
+  display: flex;
+  flex-direction: column;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group .input-group-item input {
+  margin: 0.3645833333vw 0 0.2604166667vw;
+}
+.openBarbershop .barbershopBox .left-person-input .left-person-content .input-group-container .category-content .input-group .input-group-item .input-group-values {
+  margin-top: 0.2604166667vw;
+  display: flex;
+  justify-content: space-between;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7291666667vw;
+  line-height: 0.7291666667vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .center-button {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -7vw;
+}
+.openBarbershop .barbershopBox .center-button .done-btn {
+  width: 8.615vw;
+  height: 3.281vw;
+  background: #F50A46;
+  box-shadow: 0vw 0vw 2.031vw #f50a46;
+  border-radius: 0.104vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.729vw;
+  line-height: 0.885vw;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.openBarbershop .barbershopBox .center-button .done-btn .logo-play {
+  width: 1.719vw;
+  height: 1.927vw;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 0.052vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.781vw;
+}
+.openBarbershop .barbershopBox .right-person-input {
+  display: flex;
+  flex-direction: column;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title {
+  display: flex;
+  width: 20.8333333333vw;
+  justify-content: space-between;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title .person-title-icon {
+  width: 4.6875vw;
+  height: 5.2083333333vw;
+  background: #F50A46;
+  border-radius: 0.2083333333vw;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title .person-title-icon svg {
+  transform: rotate(-90deg);
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title .person-title-text {
+  width: 15.1041666667vw;
+  height: 4.4270833333vw;
+  border-radius: 0.2083333333vw;
+  background: #5F00E6;
+  box-shadow: 0vw 0vw 2.031vw rgba(95, 0, 230, 0.5);
+  margin-top: -0.7291666667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: skew(-354deg) rotate(5deg);
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title .person-title-text p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3020833333vw;
+  line-height: 1.4583333333vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-title .person-title-text p:last-child {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5625vw;
+  line-height: 1.5104166667vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content {
+  display: flex;
+  width: 21.3541666667vw;
+  justify-content: space-between;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item {
+  width: 5.2083333333vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  transform: rotate(-87deg);
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item:hover p {
+  text-shadow: 0 0 5px dimgray;
+  transition: color 1s;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item.active .category-icon, .openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item:hover .category-icon {
+  background: #F50A46;
+  box-shadow: 0vw 0vw 2.031vw #f50a46;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item.active p, .openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item:hover p {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px dimgray;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item p {
+  width: 0.2604166667vw;
+  height: 0.78125vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.7291666667vw;
+  line-height: 0.78125vw;
+  margin-top: 0.2604166667vw;
+  padding-left: 0.2604166667vw;
+  color: transparent;
+  transform: rotate(-2deg);
+  z-index: 9999;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item .category-icon {
+  width: 3.90625vw;
+  height: 3.6458333333vw;
+  background: #332E42;
+  border-radius: 0.2083333333vw;
+  transform: skew(-354deg);
+  transition: 0.4s;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-menu .category-list .category-item .category-icon img {
+  width: 3.90625vw;
+  height: 3.6458333333vw;
+  transform: rotate(90deg);
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content {
+  display: none;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content.active {
+  display: initial;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group {
+  margin-bottom: 1.0416666667vw;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group:last-child {
+  margin-bottom: 0;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group .input-group-text {
+  display: flex;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group .input-group-text p {
+  margin-left: 0.2604166667vw;
+  text-shadow: 0 0 5px dimgray;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group .input-group-item {
+  display: flex;
+  flex-direction: column;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group .input-group-item input {
+  margin: 0.3645833333vw 0 0.2604166667vw;
+}
+.openBarbershop .barbershopBox .right-person-input .right-person-content .input-group-container .category-content .input-group .input-group-item .input-group-values {
+  margin-top: 0.2604166667vw;
+  display: flex;
+  justify-content: space-between;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7291666667vw;
+  line-height: 0.7291666667vw;
+  color: #FFFFFF;
+}
+
+input[type=range] {
+  width: 14.948vw;
+  height: 0.469vw;
+}
+
+/*generated with Input range slider CSS style generator (version 20210711)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+  -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 0.781vw + var(--ratio) * (100% - 0.781vw));
+}
+
+input[type=range].styled-slider:focus {
+  outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+  width: 0.885vw;
+  height: 0.885vw;
+  border-radius: 1em;
+  background: #FFFFFF;
+  border: none;
+  margin-top: calc(max((0.525vw - 0.052vw - 0.052vw) * 0.5, 0vw) - 0.781vw * 0.5);
+  -webkit-appearance: none;
+  margin-left: 0.052vw;
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+  height: 0.469vw;
+  background: #25252524;
+  border: 0.052vw solid none;
+  box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#F50A46, #F50A46) 0/var(--sx) 100% no-repeat, #25252524;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+  width: 0.781vw;
+  height: 0.781vw;
+  border-radius: 1em;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 0 0 0.156vw 0.104vw #2AB67B;
+}
+
+input[type=range].styled-slider::-moz-range-track {
+  height: max(calc(0.417vw - 0.052vw - 0.052vw), 0vw);
+  border-radius: 5.208vw;
+  background: #25252524;
+  border: 0.052vw solid #FFFFFF00;
+  box-shadow: none;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:hover {
+  background: #FFFFFF;
+}
+
+input[type=range].styled-slider::-moz-range-thumb:active {
+  background: #2AB67B;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(#F50A46, #F50A46) 0/var(--sx) 100% no-repeat, #25252524;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+  width: 0.781vw;
+  height: 0.781vw;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0 0 0.156vw 0.156vw #2AB67B;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track {
+  height: 0.417vw;
+  border-radius: 5.208vw;
+  background: #25252524;
+  border: 0.052vw solid #FFFFFF00;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-thumb:hover {
+  background: #FFFFFF;
+}
+
+input[type=range].styled-slider::-ms-thumb:active {
+  background: #2AB67B;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+  height: max(calc(0.417vw - 0.052vw - 0.052vw), 0vw);
+  border-radius: 5.208vw 0 0 5.208vw;
+  margin: -0.052vw 0 -0.052vw -0.052vw;
+  background: #FDC927;
+  border: 0.052vw solid #FFFFFF00;
+  border-right-width: 0;
+}

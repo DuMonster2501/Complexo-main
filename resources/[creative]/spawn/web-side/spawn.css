@@ -1,0 +1,585 @@
+@import url("http://fonts.cdnfonts.com/css/akrobat");
+*,
+body {
+  margin: 0;
+  font-family: "Akrobat", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+*:focus,
+body:focus {
+  outline: 0;
+}
+
+#charRegister {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(181.02deg, rgba(44, 30, 50, 0.8) 0.87%, rgba(2, 13, 40, 0.8) 99.23%);
+}
+#charRegister ::-webkit-input-placeholder {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.7291666667vw;
+  line-height: 0.78125vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+#charRegister .register-box {
+  width: 16.6666666667vw;
+}
+#charRegister .register-box .introdution-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.125vw;
+}
+#charRegister .register-box .introdution-area .introdution-icon {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  background: linear-gradient(0deg, #5F00E6, #5F00E6), rgba(0, 0, 0, 0.21);
+  box-shadow: 0vw 0vw 1.0416666667vw rgba(95, 0, 230, 0.5);
+  border-radius: 0.1041666667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#charRegister .register-box .introdution-area .introdution-icon svg {
+  width: 1.25vw;
+  height: 1.40625vw;
+}
+#charRegister .register-box .introdution-area .introdution-text {
+  width: 10.4166666667vw;
+}
+#charRegister .register-box .introdution-area .introdution-text p:first-child {
+  text-transform: uppercase;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.4583333333vw;
+  line-height: 1.5625vw;
+  color: #FFFFFF;
+  margin-top: 0vw;
+}
+#charRegister .register-box .introdution-area .introdution-text p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  line-height: 1.0416666667vw;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5208333333vw;
+}
+#charRegister .register-box .form-area .input-block {
+  height: 3.3854166667vw;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5208333333vw;
+  display: flex;
+  align-items: center;
+}
+#charRegister .register-box .form-area .input-block:last-child {
+  margin-bottom: 0;
+}
+#charRegister .register-box .form-area .input-block input {
+  width: 100%;
+  height: 2.0833333333vw;
+  padding-left: 0.9375vw;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.7291666667vw;
+  line-height: 0.78125vw;
+  border-left: 0.15625vw solid red;
+  color: white;
+}
+#charRegister .register-box .form-area .input-block .input-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#charRegister .register-box .form-area .input-block .input-option p {
+  display: flex;
+  align-items: center;
+  height: 2.0833333333vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.7291666667vw;
+  line-height: 0.78125vw;
+  border-left: 0.15625vw solid red;
+  padding-left: 0.9375vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+#charRegister .register-box .form-area .input-block .input-option .options {
+  display: flex;
+  margin-right: 0.4166666667vw;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change {
+  width: 3.6458333333vw;
+  height: 2.6041666667vw;
+  background: #332E42;
+  border-radius: 0.1041666667vw;
+  clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change:first-child {
+  margin-right: 0.4166666667vw;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change.active {
+  background: linear-gradient(0deg, #F50A46, #F50A46), #332E42;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change.male svg {
+  width: 1.40625vw;
+  height: 1.5625vw;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change.female svg {
+  width: 0.8333333333vw;
+  height: 1.3541666667vw;
+}
+#charRegister .register-box .form-area .input-block .input-option .options .change.north svg, #charRegister .register-box .form-area .input-block .input-option .options .change.south svg {
+  width: 1.40625vw;
+  height: 1.40625vw;
+}
+#charRegister .register-box .submit-area {
+  margin: 2.6041666667vw 1.0416666667vw 0;
+  display: flex;
+  justify-content: space-between;
+  transform: skew(354deg) rotate(-0.5deg);
+}
+#charRegister .register-box .submit-area .submit-button {
+  width: 7.5520833333vw;
+  height: 2.8645833333vw;
+  background: #F50A46;
+  transition: 0.4s;
+  border-radius: 0.1041666667vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.8645833333vw;
+  padding-right: 0.4166666667vw;
+}
+#charRegister .register-box .submit-area .submit-button:hover {
+  box-shadow: 0vw 0vw 1.0416666667vw #f50a46;
+  transition: 0.4s;
+}
+#charRegister .register-box .submit-area .submit-button p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+}
+#charRegister .register-box .submit-area .submit-button .go-img {
+  width: 1.8229166667vw;
+  height: 2.0833333333vw;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 0.15625vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#charRegister .register-box .submit-area .submit-button .go-img svg {
+  width: 0.625vw;
+  height: 0.9375vw;
+}
+#charRegister .register-box .submit-area .return-button {
+  width: 3.125vw;
+  height: 2.8645833333vw;
+  background: #FFFFFF;
+  border-radius: 0.1041666667vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+#charRegister .register-box .submit-area .return-button:hover {
+  box-shadow: 0vw 0vw 1.0416666667vw rgba(255, 255, 255, 0.6);
+  transition: 0.4s;
+}
+#charRegister .register-box .submit-area .return-button svg {
+  width: 1.1458333333vw;
+  height: 0.7291666667vw;
+}
+
+#charPage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#charPage .selection-grid-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+#charPage .selection-grid-box .person-area {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(181.02deg, rgba(44, 30, 50, 0.8) 0.87%, rgba(2, 13, 40, 0.8) 99.23%);
+}
+#charPage .selection-grid-box .person-area .person-info {
+  width: 16.6666666667vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#charPage .selection-grid-box .person-area .person-info .primary-data p {
+  text-align: center;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8229166667vw;
+  line-height: 2.0833333333vw;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+#charPage .selection-grid-box .person-area .person-info .secondary-data .info-block {
+  height: 3.3854166667vw;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5208333333vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#charPage .selection-grid-box .person-area .person-info .secondary-data .info-block:last-child {
+  margin-bottom: 0;
+}
+#charPage .selection-grid-box .person-area .person-info .secondary-data .info-block p:first-child {
+  display: flex;
+  align-items: center;
+  height: 2.0833333333vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8333333333vw;
+  line-height: 0.8854166667vw;
+  border-left: 0.15625vw solid red;
+  padding-left: 0.9375vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+#charPage .selection-grid-box .person-area .person-info .secondary-data .info-block p:last-child {
+  display: flex;
+  align-items: center;
+  height: 2.0833333333vw;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8333333333vw;
+  line-height: 0.8854166667vw;
+  padding-right: 0.9375vw;
+  color: white;
+}
+#charPage .selection-grid-box .person-area .person-info .button-area {
+  display: flex;
+  justify-content: center;
+  transform: skew(354deg) rotate(-0.5deg);
+}
+#charPage .selection-grid-box .person-area .person-info .button-area .selection-button {
+  width: 7.5520833333vw;
+  height: 2.8645833333vw;
+  background: #F50A46;
+  transition: 0.4s;
+  border-radius: 0.1041666667vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.8645833333vw;
+  padding-right: 0.4166666667vw;
+}
+#charPage .selection-grid-box .person-area .person-info .button-area .selection-button:hover {
+  box-shadow: 0vw 0vw 1.0416666667vw #f50a46;
+  transition: 0.4s;
+}
+#charPage .selection-grid-box .person-area .person-info .button-area .selection-button p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+}
+#charPage .selection-grid-box .person-area .person-info .button-area .selection-button .go-img {
+  width: 1.8229166667vw;
+  height: 2.0833333333vw;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 0.15625vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#charPage .selection-grid-box .person-area .person-info .button-area .selection-button .go-img svg {
+  width: 0.625vw;
+  height: 0.9375vw;
+}
+#charPage .selection-grid-box .person-area:nth-child(even) {
+  background: linear-gradient(181.02deg, rgba(25, 17, 29, 0.8) 0.87%, rgba(2, 13, 40, 0.8) 99.23%);
+}
+#charPage .selection-grid-box .person-area .create-data {
+  width: 16.6666666667vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#charPage .selection-grid-box .person-area .create-data .title-info {
+  display: flex;
+  justify-content: space-between;
+}
+#charPage .selection-grid-box .person-area .create-data .title-info .title-icon {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  background: linear-gradient(0deg, #5F00E6, #5F00E6), rgba(0, 0, 0, 0.21);
+  box-shadow: 0vw 0vw 1.0416666667vw rgba(95, 0, 230, 0.5);
+  border-radius: 0.1041666667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#charPage .selection-grid-box .person-area .create-data .title-info .title-icon svg {
+  width: 1.25vw;
+  height: 1.40625vw;
+}
+#charPage .selection-grid-box .person-area .create-data .title-info .title-text {
+  display: flex;
+  align-items: center;
+}
+#charPage .selection-grid-box .person-area .create-data .title-info .title-text p:first-child {
+  text-transform: uppercase;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.4583333333vw;
+  line-height: 1.5625vw;
+  color: #FFFFFF;
+  margin-top: 0vw;
+}
+#charPage .selection-grid-box .person-area .create-data .mid-info p {
+  text-align: center;
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9375vw;
+  line-height: 1.0416666667vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+#charPage .selection-grid-box .person-area .create-data .button-area {
+  display: flex;
+  justify-content: center;
+  transform: skew(354deg) rotate(-0.5deg);
+}
+#charPage .selection-grid-box .person-area .create-data .button-area .create-button {
+  height: 2.8645833333vw;
+  background: #F50A46;
+  transition: 0.4s;
+  border-radius: 0.1041666667vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.4166666667vw;
+}
+#charPage .selection-grid-box .person-area .create-data .button-area .create-button:hover {
+  box-shadow: 0vw 0vw 1.0416666667vw #f50a46;
+  transition: 0.4s;
+}
+#charPage .selection-grid-box .person-area .create-data .button-area .create-button p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+  padding-left: 1.8229166667vw;
+  padding-right: 1.8229166667vw;
+}
+#charPage .selection-grid-box .person-area .create-data .button-area .create-button .go-img {
+  width: 1.8229166667vw;
+  height: 2.0833333333vw;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 0.15625vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#charPage .selection-grid-box .person-area .create-data .button-area .create-button .go-img svg {
+  width: 0.625vw;
+  height: 0.9375vw;
+}
+
+#charSpawn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#charSpawn .spawn-grid-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+#charSpawn .spawn-grid-box .spawn-area {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(181.02deg, rgba(38, 30, 50, 0.8) 0.87%, rgba(15, 14, 19, 0.8) 99.23%);
+}
+#charSpawn .spawn-grid-box .spawn-area .top-bar {
+  width: 12.292vw;
+  height: 0.365vw;
+}
+#charSpawn .spawn-grid-box .spawn-area .mid-info {
+  display: flex;
+  justify-content: space-between;
+}
+#charSpawn .spawn-grid-box .spawn-area .mid-info .information-icon {
+  width: 3.90625vw;
+  height: 3.90625vw;
+  border-radius: 0.1041666667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#charSpawn .spawn-grid-box .spawn-area .mid-info .information-text {
+  display: flex;
+  flex-direction: column;
+}
+#charSpawn .spawn-grid-box .spawn-area .mid-info .information-text span {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.938vw;
+  line-height: 1.406vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 0.885vw;
+}
+#charSpawn .spawn-grid-box .spawn-area .mid-info .information-text p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.875vw;
+  line-height: 2.708vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 0.885vw;
+}
+#charSpawn .spawn-grid-box .spawn-area .spawn-button {
+  transform: skew(354deg);
+  margin-bottom: 10vh;
+  height: 2.8645833333vw;
+  background: #F50A46;
+  transition: 0.4s;
+  border-radius: 0.1041666667vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.4166666667vw;
+}
+#charSpawn .spawn-grid-box .spawn-area .spawn-button:hover {
+  box-shadow: 0vw 0vw 1.0416666667vw #f50a46;
+  transition: 0.4s;
+}
+#charSpawn .spawn-grid-box .spawn-area .spawn-button p {
+  font-family: Akrobat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.78125vw;
+  line-height: 0.78125vw;
+  color: #FFFFFF;
+  padding-left: 1.8229166667vw;
+  padding-right: 1.8229166667vw;
+}
+#charSpawn .spawn-grid-box .spawn-area .spawn-button .go-img {
+  width: 1.8229166667vw;
+  height: 2.0833333333vw;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 0.15625vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#charSpawn .spawn-grid-box .spawn-area .spawn-button .go-img svg {
+  width: 0.625vw;
+  height: 0.9375vw;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(1) .top-bar {
+  background: #2F6BFF;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw #448fff;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(1) .mid-info .information-icon {
+  background: #2F6BFF;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw rgba(68, 143, 255, 0.5);
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(1) .mid-info .information-icon svg {
+  width: 1.3541666667vw;
+  height: 1.3541666667vw;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(2) .top-bar {
+  background: #FF2F2F;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw #ff2f2f;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(2) .mid-info .information-icon {
+  background: #FF2F2F;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw rgba(255, 47, 47, 0.5);
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(2) .mid-info .information-icon svg {
+  width: 1.3541666667vw;
+  height: 1.3541666667vw;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(3) .top-bar {
+  background: #FF852D;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw #ff932f;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(3) .mid-info .information-icon {
+  background: #FF852D;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw rgba(255, 147, 47, 0.5);
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(3) .mid-info .information-icon svg {
+  width: 1.3541666667vw;
+  height: 1.3541666667vw;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(4) .top-bar {
+  background: #2DFF5B;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw #2dff5b;
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(4) .mid-info .information-icon {
+  background: #2DFF5B;
+  box-shadow: 0vw 0vw 5.104vw 0.469vw rgba(45, 255, 90, 0.5);
+}
+#charSpawn .spawn-grid-box .spawn-area:nth-child(4) .mid-info .information-icon svg {
+  width: 1.3541666667vw;
+  height: 1.3541666667vw;
+}

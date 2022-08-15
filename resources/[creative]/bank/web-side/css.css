@@ -1,0 +1,277 @@
+body,td,th { font-size: 12px; font-family: "Roboto",Arial,Helvetica,sans-serif; color: #ccc; cursor: default; vertical-align: baseline; outline: 0; line-height: 1; margin: 0; padding: 0; word-wrap: break-word; }
+a,a:link,a:visited,a:active,a:hover { font-family: "Roboto",Arial,Helvetica,sans-serif; font-size: 12px; color: #ccc; text-decoration: none; }
+div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr { border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; margin:0; padding:0; }
+:focus { outline:0; }
+img { border:none; }
+::-webkit-scrollbar { width: 0; }
+::selection { background: #222; color: #ccc; }
+::-moz-selection { background: #222; color: #ccc; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+textarea:focus, input:focus{ outline: none; }
+button { border: none; background: none; }
+
+#actionmenu {
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	height: 560px;
+	padding: 20px;
+	display: none;
+	overflow: auto;
+	position: fixed;
+	background-color: #222;
+	transform: translate(-50%,-50%);
+}
+
+button {
+	top: 50%;
+	left: 50%;
+	font-size: 18px;
+	display: none;
+	position: fixed;
+	color: #444;
+	transform: translate(-50%,-50%);
+	margin-top: -265px;
+	margin-left: 465px;
+}
+
+button:hover {
+	color: #333;
+}
+
+#bank-top {
+	text-align: right;
+	line-height: 17px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 20px;
+	width: 920px;
+	height: 54px;
+	float: left;
+	letter-spacing: 1.5px;
+	padding: 0 40px 0 0;
+	background-image: url("images/logo-top.png");
+	background-repeat: no-repeat;
+}
+
+#bank-top white {
+	color: #ccc;
+}
+
+#bank-left {
+	margin-right: 21px;
+	width: 280px;
+	height: 466px;
+	float: left;
+}
+
+#bank-left a {
+	width: 240px;
+	padding: 15px 20px;
+	/* background-image: linear-gradient(#f3a000,#d57800); */
+	background-color: #333;
+	float: left;
+	color: #ccc;
+	margin: 0 0 10px 0;
+	border-radius: 4px;
+}
+
+#bank-left a:hover {
+	background-color: #444;
+}
+
+#bank-left texto {
+	width: 100%;
+	font-size: 16px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+#bank-right {
+	width: 659px;
+	height: 466px;
+	float: left;
+}
+
+.title {
+	float: left;
+	color: #ccc;
+	width: 647px;
+	font-size: 24px;
+	padding: 10px 0 10px 10px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #444;	
+}
+
+.format {
+	float: left;
+	padding: 10px;
+	margin-top: 10px;
+	background: #444;
+	border-radius: 4px;
+	box-shadow: 1px 1px rgba(0,0,0,0.1);
+}
+
+.format.active {
+	color: #95c5ab;
+	background: #2e6e4c;
+}
+
+.format-left {
+	font-size: 30px;
+	text-align: center;
+	width: 40px;
+	padding: 8px 15px;
+	float: left;
+}
+
+.format-right {
+	float: left;
+	width: 549px;
+	padding: 4px 10px;
+	line-height: 20px;
+}
+
+.format-right texto {
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.format-right b {
+	color: #ccc;
+}
+
+.multas {
+	color: #95c5ab;;
+	position: absolute;
+	background: #2e6e4c;
+	padding: 12px 12px 11px;
+	margin: -1px 0 0 513px;
+	border-radius: 4px;
+}
+
+.multas:hover {
+	background: #39875e;
+}
+
+.salario {
+	color: #95c5ab;;
+	position: absolute;
+	background: #2e6e4c;
+	padding: 12px 12px 11px;
+	margin: -1px 0 0 490px;
+	border-radius: 4px;
+}
+
+.salario:hover {
+	background: #39875e;
+}
+
+.faturas {
+	color: #95c5ab;;
+	position: absolute;
+	background: #2e6e4c;
+	padding: 12px 12px 11px;
+	margin: -1px 0 0 513px;
+	border-radius: 4px;
+}
+
+.faturas:hover {
+	background: #39875e;
+}
+
+.menu-depositar, .menu-sacar, .menu-transferir {
+	float: left;
+	width: 625px;
+	padding: 20px 20px;
+	background: #333;
+	margin-right: 11px;
+	border-radius: 4px;
+	box-shadow: 1px 1px rgba(0,0,0,0.1);
+	color: #ccc;
+}
+
+.deposito, .saque {
+	border: 0;
+	float: left;
+	width: 154px;
+	padding: 15px;
+	font-size: 16px;
+	margin-right: 10px;
+	background: rgba(0,0,0,0.1);
+	color: #ccc;
+	border-radius: 4px;
+}
+
+.transfer, .playerID {
+	border: 0;
+	float: left;
+	width: 154px;
+	padding: 15px;
+	font-size: 16px;
+	margin-right: 10%;
+	margin-top: 1%;
+	background: rgba(0,0,0,0.1);
+	color: #ccc;
+	border-radius: 4px;
+}
+
+.depositar, .sacar, .transferir {
+	width: 100px;
+	text-align: center;
+	color: #95c5ab;;
+	background: #2e6e4c;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 4px;
+	float: left;
+}
+
+.transferir {
+	width: 100px;
+	text-align: center;
+	color: #95c5ab;;
+	background: #2e6e4c;
+	padding: 15px 10px;
+	margin-right: 8.8%;
+	margin-top: -12%;
+	font-size: 16px;
+	border-radius: 4px;
+	float: right;
+}
+
+.depositar:hover, .sacar:hover, .transferir:hover {
+	background: #39875e;
+}
+
+.menu-space {
+	float: left;
+	width: 625px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 4px;
+}
+
+.title-sacar {
+	width: 284px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.title-transferir {
+	width: 284px;
+	float: left;
+	margin-top: 5%;
+}
+
+.title-sacar b {
+	font-size: 22px;
+	display: block;
+	margin-bottom: -5px;
+}
+
+.title-transferir b {
+	font-size: 22px;
+	display: block;
+	margin-bottom: -5px;
+}

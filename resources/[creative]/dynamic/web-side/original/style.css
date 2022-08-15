@@ -1,0 +1,48 @@
+::-webkit-scrollbar { width: 0; }
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
+.container {
+	top: 20%;
+	right: 20%;
+	display: none;
+	position: absolute;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	display: block;
+	color: #b7bcce;
+	margin-top: 5px;
+	font-size: 16px;
+	min-height: 30px;
+	max-height: 58px;
+	min-width: 280px;
+	border-radius: 4px;
+	background: #22242e;
+	transition: all 0.5s;
+	padding: 20px 20px 20px 12px;
+	border-left: 5px solid #171920;
+}
+
+.btn:hover {
+	background: #2d303c;
+	transition: all 0.5s;
+}
+
+.title {
+	float: left;
+	font-size: 15px;
+	margin-top: -9px;
+	text-align: left;
+}
+
+.description {
+	color: #60677b;
+	font-size: 11px;
+	margin-top: 13px;
+	text-align: left;
+	letter-spacing: 0.8px;
+}

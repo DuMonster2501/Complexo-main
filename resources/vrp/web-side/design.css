@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.console {
+	background-color: white;
+	color: red;
+}
+
+.wprompt {
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	width: 600px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 15px;
+}
+
+.wprompt h1 {
+	font-size: 13px;
+	font-weight: 300;
+	padding: 7px 0 12px 5px;
+}
+
+.wprompt textarea {
+	outline: none !important;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid rgba(255,255,255,0.2);
+	flex: 1;
+	color: #ccc;
+	font-size: 15px;
+	width: 100%;
+	padding: 10px;
+	resize: none;
+	box-sizing: border-box;
+}
+
+.wprompt textarea:focus {
+	outline: none !important;
+}
+
+.wprompt .help {
+	font-size: 12px;
+	padding: 12px 0 7px 5px;
+}
+
+.requestManager {
+	width: 100%;
+	height: 95%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#NotifyBackground {
+	color: #c0c0c0;
+	font-size: 13px;
+ 	line-height: 20px;
+	border-radius: 2px;
+	padding: 15px 20px;
+	margin-right: 10px;
+	background: #323644;
+	text-shadow: 1px 1px #232630;
+	border-left: 5px solid #232630;
+	border-right: 5px solid #232630;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+#NotifyBackground green {
+	color: #a0ceb6;
+}
+
+#NotifyBackground b {
+	font-weight: 300;
+	color: rgba(255,255,255,0.9);
+}
+
+#deathDiv {
+	width: 100%;
+	display: none;
+	bottom: 100px;
+	position: fixed;
+}
+
+#deathText {
+	width: 800px;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	color: rgba(255,255,255,0.9);
+	font-family: "Jura",sans-serif;
+}
+
+#deathText color {
+	color: #92ac29;
+}
+
+#deathText color2 {
+	color: #bd962e;
+}
+
+#deathText i {
+	font-size: 13px;
+	font-style: normal;
+	letter-spacing: 2px;
+}

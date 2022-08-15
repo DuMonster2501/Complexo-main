@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_39" data-name="Retângulo 39" width="14" height="14" transform="translate(0 14) rotate(-90)" fill="#fff" opacity="0.6"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_30" data-name="Grupo 30" transform="translate(-3 -3)">
+    <g id="Grupo_de_máscara_8" data-name="Grupo de máscara 8" transform="translate(3 3)" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="invisible_box" data-name="invisible box">
+          <rect id="Retângulo_43" data-name="Retângulo 43" width="14" height="14" fill="none"/>
+        </g>
+        <g id="icons_Q2" data-name="icons Q2" transform="translate(0.588 2.392)">
+          <circle id="Elipse_1" data-name="Elipse 1" cx="1.458" cy="1.458" r="1.458" transform="translate(4.954 3.15)" fill="#fff"/>
+          <path id="Caminho_23" data-name="Caminho 23" d="M5.7,10.013a.612.612,0,0,1-.817.875,4.171,4.171,0,0,1,0-6.125.612.612,0,0,1,.817.875,2.917,2.917,0,0,0,0,4.375Z" transform="translate(-1.213 -3.217)" fill="#fff"/>
+          <path id="Caminho_24" data-name="Caminho 24" d="M12.932,7.787A4.142,4.142,0,0,1,11.59,10.85a.613.613,0,0,1-.817-.875,2.917,2.917,0,0,0,0-4.375.612.612,0,1,1,.817-.875A4.142,4.142,0,0,1,12.932,7.787Z" transform="translate(-2.436 -3.179)" fill="#fff"/>
+          <path id="Caminho_25" data-name="Caminho 25" d="M15.679,7.512A6.154,6.154,0,0,1,13.754,12a.583.583,0,0,1-.817-.817,5.075,5.075,0,0,0,0-7.35.583.583,0,0,1,.817-.817A6.154,6.154,0,0,1,15.679,7.512Z" transform="translate(-2.85 -2.904)" fill="#fff"/>
+          <path id="Caminho_26" data-name="Caminho 26" d="M3.451,11.187A.583.583,0,0,1,2.634,12a6.213,6.213,0,0,1,0-8.983.583.583,0,0,1,.817.817,5.075,5.075,0,0,0,0,7.35Z" transform="translate(-0.714 -2.904)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>#complexo</title>
+
+    <link rel="stylesheet" href="hud.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+    <script src="nui://game/ui/jquery.js"></script>
+    <script src="hud.js"></script>
+  </head>
+  <body>
+    <section id="displayLogo">
+      <img src="./images/complexo.png" alt="complexo-logo"/>
+    </section>
+    <section id="displayHud">
+      <div class="game-info">
+        <div class="row">
+          <div id="location"></div>
+        </div>
+        <div class="row">
+          <div id="radio"></div>
+          <div id="microphone">
+            <div class="voice-volume"></div>
+            <div class="voice-volume"></div>
+            <div class="voice-volume"></div>
+            <div class="voice-volume"></div>
+          </div>
+        </div>
+      </div>
+      <div class="user-info">
+        <div class="ticker">
+          <div class="bar"></div>
+        </div>
+        <div class="game-user-info">
+          <div class="oxigen-data">
+            <img src="images/oxigen.svg" />
+            <div class="oxigen-bar"></div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="speedometer">
+            <div class="functions">
+              <img src="images/belt.svg" />
+            </div>
+            <div class="speed-info">
+              <p id="speed"></p>
+              <p id="metric">KMH</p>
+              <div class="fuel">
+                <img src="images/fuel.svg" />
+                <div class="fuel-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="status-bar">
+            <div class="health">
+              <div class="icon">
+                <img src="images/heart.svg" alt="heart-icon"/>
+              </div>
+              <div class="bars">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div>
+            <div class="armour">
+              <div class="icon">
+                <img src="images/shield.svg" alt="shield-icon"/>
+              </div>
+              <div class="bars">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="movieTop"></div>
+    <div id="movieBottom"></div>
+    <div id="hoodDisplay"></div>
+  </body>
+</html>

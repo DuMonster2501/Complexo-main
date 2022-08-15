@@ -1,0 +1,370 @@
+@font-face {
+  font-family: digital;
+  src: url("font/DS-DIGI.TTF");
+}
+body,
+* {
+  margin: 0;
+  font-family: "Montserrat";
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#displayLogo {
+  display: flex;
+  justify-content: center;
+}
+#displayLogo img {
+  width: 160px;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+
+#displayHud {
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+}
+#displayHud .game-info {
+  top: 70px;
+  right: 30px;
+  position: absolute !important;
+  color: white;
+  opacity: 0.75;
+}
+#displayHud .game-info .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#displayHud .game-info .row #location,
+#displayHud .game-info .row #radio,
+#displayHud .game-info .row #microphone {
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+  background-color: rgba(31, 31, 31, 0.6);
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#displayHud .game-info .row #location p,
+#displayHud .game-info .row #radio p,
+#displayHud .game-info .row #microphone p {
+  padding: 0;
+  font-weight: 600;
+  font-size: 11px;
+  padding-right: 3px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+#displayHud .game-info .row #location img,
+#displayHud .game-info .row #radio img,
+#displayHud .game-info .row #microphone img {
+  padding: 0px 5px;
+  height: 18px;
+}
+#displayHud .game-info .row #radio.active {
+  color: #ffaf46;
+}
+#displayHud .game-info .row #microphone {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 8px;
+}
+#displayHud .game-info .row #microphone .voice-volume {
+  height: 9px;
+  width: 9px;
+  border-radius: 0px;
+  margin-right: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#displayHud .game-info .row #microphone .voice-volume:last-child {
+  margin-right: 0;
+}
+#displayHud .game-info .row #microphone .voice-volume.setup {
+  background-color: white;
+}
+#displayHud .game-info .row #microphone.active .setup {
+  background-color: #ffaf46;
+}
+#displayHud .user-info {
+  padding: 10px;
+  bottom: 30px;
+  position: absolute !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#displayHud .user-info .ticker {
+  width: 100px;
+  display: none;
+  height: 7px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+#displayHud .user-info .ticker .bar {
+  border-radius: 5px;
+  display: block;
+  background-color: #f50a46;
+  height: 100%;
+  width: 0%;
+  max-width: 100%;
+  transition: all 0.5s;
+}
+#displayHud .user-info .game-user-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#displayHud .user-info .game-user-info .oxigen-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 22px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+#displayHud .user-info .game-user-info .oxigen-data img {
+  margin: auto;
+  position: absolute;
+  height: 14px;
+  opacity: 0.85;
+  z-index: 5;
+}
+#displayHud .user-info .game-user-info .oxigen-data .oxigen-bar {
+  display: flex;
+  position: absolute;
+  justify-self: flex-start;
+  background-color: #2e75b3;
+  left: 0;
+  width: 50%;
+  max-width: 100%;
+  height: 22px;
+  border-radius: 5px;
+}
+#displayHud .user-info .data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#displayHud .user-info .speedometer {
+  display: none;
+}
+#displayHud .user-info .status-bar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#displayHud .user-info .status-bar .health,
+#displayHud .user-info .status-bar .armour {
+  display: flex;
+  flex-direction: row;
+}
+#displayHud .user-info .status-bar .health .icon,
+#displayHud .user-info .status-bar .armour .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#displayHud .user-info .status-bar .health .icon img,
+#displayHud .user-info .status-bar .armour .icon img {
+  width: 15px;
+}
+#displayHud .user-info .status-bar .health .bars,
+#displayHud .user-info .status-bar .armour .bars {
+  display: flex;
+  flex-direction: row;
+}
+#displayHud .user-info .status-bar .health .bars .item,
+#displayHud .user-info .status-bar .armour .bars .item {
+  width: 10px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+#displayHud .user-info .status-bar .health {
+  margin-left: 8px;
+}
+#displayHud .user-info .status-bar .health .icon {
+  margin-right: 6px;
+  background-color: #ff1c1c;
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info .status-bar .health .icon img {
+  height: 14px;
+  transform: skew(10deg, 0deg);
+}
+#displayHud .user-info .status-bar .health .bars .item {
+  margin-right: 6px;
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info .status-bar .health .bars .item.active {
+  background-color: #e94343;
+}
+#displayHud .user-info .status-bar .health .bars .item:last-child {
+  margin-right: 0px;
+}
+#displayHud .user-info .status-bar .armour {
+  display: none;
+  margin-right: 8px;
+  flex-direction: row-reverse;
+}
+#displayHud .user-info .status-bar .armour .icon {
+  margin-left: 6px;
+  background-color: #562ff3;
+  -moz-transform: skew(10deg, 0deg);
+  -webkit-transform: skew(10deg, 0deg);
+  -o-transform: skew(10deg, 0deg);
+  -ms-transform: skew(10deg, 0deg);
+  transform: skew(10deg, 0deg);
+}
+#displayHud .user-info .status-bar .armour .icon img {
+  -moz-transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info .status-bar .armour .bars .item {
+  margin-left: 6px;
+  -moz-transform: skew(10deg, 0deg);
+  -webkit-transform: skew(10deg, 0deg);
+  -o-transform: skew(10deg, 0deg);
+  -ms-transform: skew(10deg, 0deg);
+  transform: skew(10deg, 0deg);
+}
+#displayHud .user-info .status-bar .armour .bars .item:first-child {
+  margin-left: 0;
+}
+#displayHud .user-info .status-bar .armour .bars .item.active {
+  background-color: #7758f5;
+}
+#displayHud .user-info.vehicle .speedometer {
+  display: inherit;
+  margin-right: 20px;
+}
+#displayHud .user-info.vehicle .speedometer .functions {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+#displayHud .user-info.vehicle .speedometer .functions img {
+  height: 20px;
+}
+#displayHud .user-info.vehicle .speedometer .speed-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#displayHud .user-info.vehicle .speedometer .speed-info #speed {
+  font-family: "digital" !important;
+  font-size: 45px;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+#displayHud .user-info.vehicle .speedometer .speed-info #metric {
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+#displayHud .user-info.vehicle .speedometer .speed-info .fuel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 22px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.8);
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info.vehicle .speedometer .speed-info .fuel .fuel-bar {
+  display: flex;
+  position: absolute;
+  justify-self: flex-start;
+  background-color: #f39801;
+  left: 0;
+  width: 0%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#displayHud .user-info.vehicle .speedometer .speed-info .fuel img {
+  margin: auto;
+  position: absolute;
+  height: 13px;
+  opacity: 0.8;
+  z-index: 5;
+  transform: skew(10deg, 0deg);
+}
+#displayHud .user-info.vehicle .status-bar {
+  display: flex;
+  flex-direction: column;
+}
+#displayHud .user-info.vehicle .health {
+  margin-left: 6px;
+}
+#displayHud .user-info.vehicle .armour {
+  margin-top: 4px;
+  margin-right: 0px;
+  flex-direction: row;
+}
+#displayHud .user-info.vehicle .armour .icon {
+  margin-left: 0px;
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info.vehicle .armour .icon img {
+  transform: skew(10deg, 0deg);
+}
+#displayHud .user-info.vehicle .armour .bars {
+  flex-direction: row-reverse;
+}
+#displayHud .user-info.vehicle .armour .bars .item {
+  transform: skew(-10deg, 0deg);
+}
+#displayHud .user-info.vehicle .armour .bars .item:first-child {
+  margin-left: 6px;
+}
+
+#movieTop {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 12%;
+  display: none;
+  background: #000;
+  position: absolute !important;
+}
+
+#movieBottom {
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 12%;
+  display: none;
+  background: #000;
+  position: absolute !important;
+}
+
+#hoodDisplay {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: #000;
+  position: absolute !important;
+}

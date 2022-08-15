@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>#complexo</title>
+  <link rel="stylesheet" href="barbershop.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <img id="cursorPointer" src="images/cursor.png">
+  <section class="openBarbershop">
+    <div class="barbershopBox">
+      <div class="left-person-input">
+        <div class="left-person-title">
+          <div class="person-title-icon">
+            <svg class="wand-magic" width="2.865vw" height="2.865vw" viewBox="0 0 55 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M17.5901 24.8768C17.7605 25.5145 18.3033 25.9817 18.9553 26.0596L27.8768 27.1232L28.9405 36.0447C29.0188 36.706 29.4965 37.2428 30.1232 37.41C30.7607 37.5801 31.4361 37.3454 31.8311 36.8191L37.2121 29.6247L45.4692 33.164C46.0756 33.4232 46.7778 33.2887 47.244 32.8225C47.7102 32.3563 47.8449 31.6542 47.5857 31.0477L44.0462 22.7906L51.2406 17.4096C51.767 17.0146 52.0018 16.3392 51.8315 15.7017C51.6613 15.0641 51.1183 14.5945 50.4662 14.519L41.545 13.4553L40.4813 4.53382C40.4043 3.88058 39.936 3.33875 39.2983 3.16859C38.6609 2.99822 37.9854 3.23315 37.5904 3.75941L32.2097 10.9539L23.9524 7.41455C23.346 7.15512 22.644 7.28983 22.1775 7.75604C21.7113 8.22225 21.5768 8.92436 21.836 9.53087L25.3754 17.788L18.1809 23.1689C17.6547 23.5639 17.42 24.2394 17.5901 24.8768V24.8768Z"
+                  fill="white" />
+                <path
+                  d="M47.2441 10.035L49.5229 7.75623C50.1527 7.12641 50.1527 6.1073 49.5229 5.47749C48.8933 4.84767 47.874 4.84767 47.2441 5.47749L44.9654 7.75623C44.3356 8.38604 44.3356 9.40537 44.9654 10.035C45.5952 10.6648 46.6143 10.6648 47.2441 10.035Z"
+                  fill="white" />
+                <path
+                  d="M30.9581 6.28193C31.818 6.05162 32.3277 5.16808 32.0973 4.30806L31.2629 1.19476C31.0303 0.334629 30.1491 -0.17498 29.2889 0.0553326C28.429 0.285645 27.9193 1.16919 28.1497 2.02921L28.9841 5.14251C29.2121 5.99437 30.0912 6.51289 30.9581 6.28193Z"
+                  fill="white" />
+                <path
+                  d="M38.464 34.2969C37.6039 34.5272 37.0943 35.4107 37.3246 36.2707L38.1592 39.384C38.3871 40.2359 39.2662 40.7544 40.1331 40.5235C40.9932 40.2932 41.5028 39.4096 41.2725 38.5496L40.4379 35.4363C40.2064 34.5774 39.3231 34.0654 38.464 34.2969V34.2969Z"
+                  fill="white" />
+                <path
+                  d="M19.5642 14.5625L16.4509 13.7282C15.5908 13.4979 14.7073 14.0073 14.477 14.8674C14.2459 15.7356 14.7657 16.6137 15.6164 16.8413L18.7297 17.6758C19.5898 17.9062 20.4731 17.3965 20.7036 16.5364C20.9327 15.6752 20.4208 14.7917 19.5642 14.5625Z"
+                  fill="white" />
+                <path
+                  d="M48.7184 24.0424C48.4874 24.9104 49.0072 25.7884 49.8578 26.0163L52.9711 26.8506C53.8313 27.0809 54.7146 26.5716 54.945 25.7114C55.1754 24.8513 54.6614 23.9656 53.8058 23.7375L50.6925 22.903C49.8323 22.6727 48.9487 23.1823 48.7184 24.0424V24.0424Z"
+                  fill="white" />
+                <path
+                  d="M2.75122 54.5278C3.38082 55.1576 4.40014 55.1576 5.02996 54.5278L25.462 34.0959L24.9766 30.0238L20.9048 29.5383L0.472261 49.9704C-0.157339 50.6002 -0.157339 51.6193 0.472261 52.2491L2.75122 54.5278Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="55" height="55" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="person-title-text">
+            <p>CRIAÇÃO DO</p>
+            <p>PERSONAGEM</p>
+          </div>
+        </div>
+        <div class="left-person-content">
+          <div class="input-group-menu">
+            <div class="category-list">
+              <div class="category-item active" index="0">
+                <p>PARENTESCO</p>
+                <div class="category-icon">
+                  <img src="images/parrents.png">
+                </div>
+              </div>
+              <div class="category-item" index="1">
+                <p>NARIZ</p>
+                <div class="category-icon">
+                  <img src="images/nose.png">
+                </div>
+              </div>
+              <div class="category-item" index="2">
+                <p>QUEIXO</p>
+                <div class="category-icon">
+                  <img src="images/chin.png">
+                </div>
+              </div>
+              <div class="category-item" index="3">
+                <p>BOCHECHA</p>
+                <div class="category-icon">
+                  <img src="images/cheek.png">
+                </div>
+              </div>
+              <div class="category-item" index="4">
+                <p>PESCOÇO</p>
+                <div class="category-icon">
+                  <img src="images/neck.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group-container">
+            <div class="category-content 0 active">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Pai</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="fathers" name="fathers" type="range" min="0" max="44" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:44;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>44</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Mãe</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="mothers" name="mothers" type="range" min="21" max="45" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:21; --min:21; --max:45;">
+                  <div class="input-group-values">
+                    <p>21</p>
+                    <p>45</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Parentesco</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="kinship" name="kinship" type="range" min="0" max="100" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:100;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>100</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor dos Olhos</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="eyecolor" name="eyecolor" type="range" min="0" max="31" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:31;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>31</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor da Pele</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="skincolor" name="skincolor" type="range" min="0" max="100" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:100;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>100</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-content 1">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Altura do nariz</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face01" name="face01" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Largura do nariz</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face00" name="face00" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Tamanho do nariz</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face04" name="face04" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-content 2">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Grossura do queixo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face16" name="face16" type="range" min="0" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Alinhamento do queixo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face17" name="face17" type="range" min="-20" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-20; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Tamanho do queixo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face15" name="face15" type="range" min="-20" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-20; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-content 3">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Largura da bochecha</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face10" name="face10" type="range" min="0" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Tamanho da bochecha</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face13" name="face13" type="range" min="-20" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-20; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-content 4">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Grossura do pescoço</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face14" name="face14" type="range" min="-20" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-20; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Tamanho do pescoço</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face19" name="face19" type="range" min="0" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-button">
+        <div class="done-btn">
+          CONFIRMAR
+          <div class="logo-play">
+            <svg width="0.625vw" height="0.938vw" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.9333 8.2L1.6 1.2C0.940764 0.705573 0 1.17595 0 2V16C0 16.824 0.940764 17.2944 1.6 16.8L10.9333 9.8C11.4667 9.4 11.4667 8.6 10.9333 8.2Z"
+                fill="white"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="right-person-input">
+        <div class="right-person-title">
+          <div class="person-title-text">
+            <p>APARÊNCIA DO</p>
+            <p>PERSONAGEM</p>
+          </div>
+          <div class="person-title-icon">
+            <svg class="wand-magic" width="2.865vw" height="2.865vw" viewBox="0 0 55 55" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M17.5901 24.8768C17.7605 25.5145 18.3033 25.9817 18.9553 26.0596L27.8768 27.1232L28.9405 36.0447C29.0188 36.706 29.4965 37.2428 30.1232 37.41C30.7607 37.5801 31.4361 37.3454 31.8311 36.8191L37.2121 29.6247L45.4692 33.164C46.0756 33.4232 46.7778 33.2887 47.244 32.8225C47.7102 32.3563 47.8449 31.6542 47.5857 31.0477L44.0462 22.7906L51.2406 17.4096C51.767 17.0146 52.0018 16.3392 51.8315 15.7017C51.6613 15.0641 51.1183 14.5945 50.4662 14.519L41.545 13.4553L40.4813 4.53382C40.4043 3.88058 39.936 3.33875 39.2983 3.16859C38.6609 2.99822 37.9854 3.23315 37.5904 3.75941L32.2097 10.9539L23.9524 7.41455C23.346 7.15512 22.644 7.28983 22.1775 7.75604C21.7113 8.22225 21.5768 8.92436 21.836 9.53087L25.3754 17.788L18.1809 23.1689C17.6547 23.5639 17.42 24.2394 17.5901 24.8768V24.8768Z"
+                  fill="white" />
+                <path
+                  d="M47.2441 10.035L49.5229 7.75623C50.1527 7.12641 50.1527 6.1073 49.5229 5.47749C48.8933 4.84767 47.874 4.84767 47.2441 5.47749L44.9654 7.75623C44.3356 8.38604 44.3356 9.40537 44.9654 10.035C45.5952 10.6648 46.6143 10.6648 47.2441 10.035Z"
+                  fill="white" />
+                <path
+                  d="M30.9581 6.28193C31.818 6.05162 32.3277 5.16808 32.0973 4.30806L31.2629 1.19476C31.0303 0.334629 30.1491 -0.17498 29.2889 0.0553326C28.429 0.285645 27.9193 1.16919 28.1497 2.02921L28.9841 5.14251C29.2121 5.99437 30.0912 6.51289 30.9581 6.28193Z"
+                  fill="white" />
+                <path
+                  d="M38.464 34.2969C37.6039 34.5272 37.0943 35.4107 37.3246 36.2707L38.1592 39.384C38.3871 40.2359 39.2662 40.7544 40.1331 40.5235C40.9932 40.2932 41.5028 39.4096 41.2725 38.5496L40.4379 35.4363C40.2064 34.5774 39.3231 34.0654 38.464 34.2969V34.2969Z"
+                  fill="white" />
+                <path
+                  d="M19.5642 14.5625L16.4509 13.7282C15.5908 13.4979 14.7073 14.0073 14.477 14.8674C14.2459 15.7356 14.7657 16.6137 15.6164 16.8413L18.7297 17.6758C19.5898 17.9062 20.4731 17.3965 20.7036 16.5364C20.9327 15.6752 20.4208 14.7917 19.5642 14.5625Z"
+                  fill="white" />
+                <path
+                  d="M48.7184 24.0424C48.4874 24.9104 49.0072 25.7884 49.8578 26.0163L52.9711 26.8506C53.8313 27.0809 54.7146 26.5716 54.945 25.7114C55.1754 24.8513 54.6614 23.9656 53.8058 23.7375L50.6925 22.903C49.8323 22.6727 48.9487 23.1823 48.7184 24.0424V24.0424Z"
+                  fill="white" />
+                <path
+                  d="M2.75122 54.5278C3.38082 55.1576 4.40014 55.1576 5.02996 54.5278L25.462 34.0959L24.9766 30.0238L20.9048 29.5383L0.472261 49.9704C-0.157339 50.6002 -0.157339 51.6193 0.472261 52.2491L2.75122 54.5278Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="55" height="55" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="right-person-content">
+          <div class="input-group-container">
+            <div class="category-content 0 active">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Acne</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="acne" name="acne" type="range" min="0" max="23" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:23;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>23</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Manchas</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="stains" name="stains" type="range" min="0" max="12" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:12;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>12</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Sardas</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="freckles" name="freckles" type="range" min="0" max="17" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:17;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>17</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Envelhecimento</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="aging" name="aging" type="range" min="0" max="15" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:15;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>15</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Altura da testa</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face06" name="face06" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Altura da olheira</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face08" name="face08" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Tamanho da olheira</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face09" name="face09" type="range" min="-10" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-10; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="category-content 1">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cabelo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="hair" name="hair" type="range" min="0" max="" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:100;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor do cabelo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="haircolor" name="haircolor" type="range" min="0" max="63" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:63;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>63</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Reflexo do cabelo</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="haircolor2" name="haircolor2" type="range" min="0" max="60" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:60;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>60</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Sobrancelha</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="eyebrow" name="eyebrow" type="range" min="0" max="34" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:34;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>34</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Intensidade da sobrancelha</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="eyebrowintensity" name="eyebrowintensity" type="range" min="0" max="54" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:54;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>54</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor da sobrancelha</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="eyebrowcolor" name="eyebrowcolor" type="range" min="0" max="15" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:15;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>15</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="category-content 2">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Barba</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="beard" name="beard" type="range" min="0" max="28" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:28;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>28</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Intensidade da barba</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="beardintentisy" name="beardintentisy" type="range" min="0" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor da barba</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="beardcolor" name="beardcolor" type="range" min="0" max="54" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:54;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>54</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="category-content 3">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Blush</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="blush" name="blush" type="range" min="0" max="32" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:32;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>32</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Intensidade do blush</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="blushintentisy" name="blushintentisy" type="range" min="0" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor do blush</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="blushcolor" name="blushcolor" type="range" min="0" max="63" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:63;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>63</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Maquiagem</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="makeup" name="makeup" type="range" min="0" max="72" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:72;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>72</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Intensidade da maquiagem</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="makeupintensity" name="makeupintensity" type="range" min="0" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor do maquiagem</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="makeupcolor" name="makeupcolor" type="range" min="0" max="62" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:62;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>62</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="category-content 4">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white">
+                    </rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Grossura da boca</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="face12" name="face12" type="range" min="-20" max="20" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:-20; --max:20;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>20</p>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Batom</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="lipstick" name="lipstick" type="range" min="0" max="10" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Intensidade do batom</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="lipstickintensity" name="lipstickintensity" type="range" min="0" max="10" value="0"
+                    step="1" class="styled-slider slider-progress" style="--value:0; --min:0; --max:10;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+                    <rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#653d85ce">
+                    </rect>
+                  </svg>
+                  <p>Cor do batom</p>
+                </div>
+                <div class="input-group-item">
+                  <input id="lipstickcolor" name="lipstickcolor" type="range" min="0" max="63" value="0" step="1"
+                    class="styled-slider slider-progress" style="--value:0; --min:0; --max:63;">
+                  <div class="input-group-values">
+                    <p>0</p>
+                    <p>63</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group-menu">
+            <div class="category-list">
+              <div class="category-item active" index="0">
+                <div class="category-icon">
+                  <img src="images/face.png">
+                </div>
+                <p>ROSTO</p>
+              </div>
+              <div class="category-item" index="1">
+                <div class="category-icon">
+                  <img src="images/hair.png">
+                </div>
+                <p>CABELO</p>
+              </div>
+              <div class="category-item" index="2">
+                <div class="category-icon">
+                  <img src="images/beard.png">
+                </div>
+                <p>BARBA</p>
+              </div>
+              <div class="category-item" index="3">
+                <div class="category-icon">
+                  <img src="images/makeup.png">
+                </div>
+                <p>MAQUIAGEM</p>
+              </div>
+              <div class="category-item" index="4">
+                <div class="category-icon">
+                  <img src="images/lips.png">
+                </div>
+                <p>BOCA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="barbershop.js"></script>
+</body>
+
+</html>

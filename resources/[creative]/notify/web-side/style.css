@@ -1,0 +1,133 @@
+html {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	background: transparent !important;
+}
+
+body {
+	background: transparent !important;
+}
+
+#notifications {
+	right: 50px;
+	bottom: 50px;
+	display: flex;
+	color: #c6c6c6;
+	font-size: 13px;
+	max-width: 400px;
+	overflow: hidden;
+	letter-spacing: .5px;
+	align-items: flex-end;
+	flex-direction: column;
+	position: absolute !important;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+.timer-bar {
+    left: 0;
+    padding: 0;
+    height: 5px;
+    width: 100%;
+	margin-top: 15px;
+	position: absolute;
+    background-color: #fafafa;
+}
+
+#notifications b {
+	color: #fff;
+	font-weight: 300;
+}
+
+#notifications > div {
+	color: #c6c6c6;
+	margin-top: 10px;
+	line-height: 16px;
+	position: relative;
+	text-shadow: 1px 1px #000;
+	border-radius: 4px 4px 0 0;
+	padding: 15px 20px 15px 45px;
+	border-bottom: 5px solid rgba(0,0,0,0.25);
+}
+
+#verde {
+	background: rgba(0,0,0,0.5) url("images/check.png") no-repeat center left 11px;
+}
+
+#verde > .timer-bar {
+    background-color: #a3c846 !important;
+}
+
+#vermelho {
+	background: rgba(0,0,0,0.5) url("images/cancel.png") no-repeat center left 11px;
+}
+
+#vermelho > .timer-bar {
+    background-color: #e61a42 !important;
+}
+
+#blood {
+	background: rgba(0,0,0,0.5) url("images/blood.png") no-repeat center left 11px;
+}
+
+#blood > .timer-bar {
+    background-color: #fb5858 !important;
+}
+
+#hunger {
+	background: rgba(0,0,0,0.5) url("images/hunger.png") no-repeat center left 11px;
+}
+
+#hunger > .timer-bar {
+    background-color: #fc913a !important;
+}
+
+#thirst {
+	background: rgba(0,0,0,0.5) url("images/thirst.png") no-repeat center left 11px;
+}
+
+#thirst > .timer-bar {
+    background-color: #669ae1 !important;
+}
+
+#azul {
+	background: rgba(0,0,0,0.5) url("images/ring.png") no-repeat center left 11px;
+}
+
+#azul > .timer-bar {
+    background-color: #6fa9dc !important;
+}
+
+#amarelo {
+	background: rgba(0,0,0,0.5) url("images/important.png") no-repeat center left 11px;
+}
+
+#amarelo > .timer-bar {
+    background-color: #ffb400 !important;
+}
+
+#locked {
+	background: rgba(0,0,0,0.5) url("images/locked.png") no-repeat center left 11px;
+}
+
+#locked > .timer-bar {
+    background-color: #6eb969 !important;
+}
+
+#unlocked {
+	background: rgba(0,0,0,0.5) url("images/unlocked.png") no-repeat center left 11px;
+}
+
+#unlocked > .timer-bar {
+    background-color: #e62441 !important;
+}
+
+#default {
+	padding: 15px 20px !important;
+	line-height: 20px !important;
+	background: rgba(0,0,0,0.5);
+}
+
+#default line {
+	text-shadow: 0 0 transparent !important;
+	color: rgba(255,255,255,0.1);
+}
