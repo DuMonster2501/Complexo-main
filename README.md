@@ -15,5 +15,5 @@ SummerZ, DuMonster.
 ------------------------------------------------
 
 > obs: Só estou upando ela no github, não é uma versão atualizada. 
-> Discord da Comunidade [https://discord.gg/4t6MDfTuDh]
+> Discord da Comunidade [https://discord.com/invite/kVBrh845YF]
 
